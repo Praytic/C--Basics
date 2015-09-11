@@ -33,7 +33,7 @@ namespace ConsoleApplication1
             return 0;
         }
 
-        static void Main(string[] args)
+        static void Main_Prac5_V_2(string[] args)
         {
             double b1, q;
             int n;
@@ -44,7 +44,7 @@ namespace ConsoleApplication1
             Console.WriteLine("N-sum: {0}", NSum(b1, q, n));
         }
 
-        static void MainII(string[] args)
+        static void Main_Prac5_II_17(string[] args)
         {
             int a, b;
             a = Int32.Parse(Console.ReadLine());
@@ -57,7 +57,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("{0}", a / NOD);
         }
 
-        static void MainVI(string[] args)
+        static void Main_Prac4_VI_19(string[] args)
         {
             int a, b;
             a = Int32.Parse(Console.ReadLine());
@@ -80,7 +80,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("Equal {0} {1}", deva, devb);
         }
 
-        static void MainVII(string[] args)
+        static void Main_Prac4_VII_4(string[] args)
         {
             int a, b, c;
             a = Int32.Parse(Console.ReadLine());
