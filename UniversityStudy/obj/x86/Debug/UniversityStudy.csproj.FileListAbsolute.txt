@@ -1,0 +1,5 @@
+D:\Mod\GitRepository\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.csprojResolveAssemblyReference.cache
+D:\Mod\GitRepository\CSharp-Basics\UniversityStudy\bin\Debug\UniversityStudy.exe
+D:\Mod\GitRepository\CSharp-Basics\UniversityStudy\bin\Debug\UniversityStudy.pdb
+D:\Mod\GitRepository\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.exe
+D:\Mod\GitRepository\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.pdb
