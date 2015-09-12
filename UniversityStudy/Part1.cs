@@ -30,7 +30,7 @@ namespace UniversityStudy {
 			return 0;
 		}
 
-		static public void Prac5_IV_4() {
+		static public void Practice5_IV_4() {
 
 			int a, b;
 			a = Int32.Parse(Console.ReadLine());
@@ -39,7 +39,7 @@ namespace UniversityStudy {
 			Console.WriteLine("GCD result: {0}", GCD(a, b));
 		}
 
-		static public void Prac5_V_2() {
+		static public void Practice5_V_2() {
 
 			double b1, q;
 			int n;
@@ -50,7 +50,7 @@ namespace UniversityStudy {
 			Console.WriteLine("N-sum: {0}", NSum(b1, q, n));
 		}
 
-		static public void Prac5_II_17() {
+		static public void Practice5_II_17() {
 
 			int a, b;
 			a = Int32.Parse(Console.ReadLine());
@@ -63,7 +63,7 @@ namespace UniversityStudy {
 				Console.WriteLine("{0}", a / NOD);
 		}
 
-		static public void Prac4_VI_19() {
+		static public void Practice4_VI_19() {
 
 			int a, b;
 			a = Int32.Parse(Console.ReadLine());
@@ -84,7 +84,7 @@ namespace UniversityStudy {
 				Console.WriteLine("Equal {0} {1}", deva, devb);
 		}
 
-		static public void Prac4_VII_4() {
+		static public void Practice4_VII_4() {
 
 			int a, b, c;
 			a = Int32.Parse(Console.ReadLine());

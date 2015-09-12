@@ -11,11 +11,11 @@ namespace UniversityStudy {
 
         static void Main(string[] args) {
 
-			//Part1.Prac4_VI_19();
-			//Part1.Prac4_VII_4();
-			//Part1.Prac5_II_17();
-			//Part1.Prac5_IV_4();
-			//Part1.Prac5_V_2();
+			//Part1.Practice4_VI_19();
+			//Part1.Practice4_VII_4();
+			//Part1.Practice5_II_17();
+			//Part1.Practice5_IV_4();
+			//Part1.Practice5_V_2();
 
 			if (args.Length != 0) {
 				Type parts = typeof(Part1);
