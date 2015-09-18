@@ -1,6 +1,7 @@
-﻿/* Part1 class contains following tasks:
+/* Part1 class contains following tasks:
  * Practice 4 - VI(19), VII(4)
  * Practive 5 - II(17), IV(4), V(2)
+ * Practive 6 - II(3), V(6)
  */
 
 using System;
@@ -30,7 +31,40 @@ namespace UniversityStudy {
 			return 0;
 		}
 
-		static public void Prac5_IV_4() {
+        static double[] ReadDoubleArray(int n) {
+
+            string[] scan = Console.ReadLine().Split(' ');
+            double[] a = new double[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = double.Parse(scan[i]);
+            }
+            return a;
+        }
+
+        static int[] ReadIntArray(int n) {
+            string[] scan = Console.ReadLine().Split(' ');
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = int.Parse(scan[i]);
+            }
+            return a;
+        }
+
+        static void Sequence(int n) {
+
+            if (n != 0)
+                Sequence(n - 1);
+            else
+                return;
+
+            for (int i = 0; i < n; i++) {
+                Console.Write("{0} ", n);
+            }
+            Console.Write("\n");
+        }
+
+        static public void Prac5_IV_4()
+        {
 
 			int a, b;
 			a = Int32.Parse(Console.ReadLine());
@@ -101,6 +135,37 @@ namespace UniversityStudy {
 					Console.Write("{0} ({1}) ", i, devsum);
 			}
 		}
+
+        static public void Prac6_II_3() {
+
+            int n = int.Parse(Console.ReadLine());
+            double[] a = ReadDoubleArray(n);
+            double maxValue = (n == 0) ? 0 : a[0];
+            for (int i = 0; i < n; i++) {
+                if (a[i] > maxValue) {
+                    maxValue = a[i];
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                if (a[i] == maxValue) {
+                    a[i] = 0;
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                Console.Write("{0} ", a[i]);
+            }
+        }
+
+        static public void Prac6_V_6() {
+
+            int n = int.Parse(Console.ReadLine());
+            int newElement = int.Parse(Console.ReadLine());
+            int[] a = ReadIntArray(n + 1);
+            int number = 0;
+            for (; number < n + 1; number++) {
+                if (a[number] < 0) {
+            }
+        }
 	}
 }
 
