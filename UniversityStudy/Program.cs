@@ -17,7 +17,9 @@ namespace UniversityStudy {
 			//Part1.Prac5_IV_4();
 			//Part1.Prac5_V_2();
 			//Part2.Prac6_II_3();
-			Part2.Prac6_V_6();
+			//Part2.Prac6_V_6();
+            //Part3.Prac6_IV_15();
+            Part3.Prac6_VI_2();
 
 			if (args.Length != 0) {
 				Type parts = typeof(Part1);
