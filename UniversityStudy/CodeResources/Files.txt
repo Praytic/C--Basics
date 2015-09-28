@@ -1,0 +1,15 @@
+﻿Lecture_Classes
+Practice_Classes
+-Third_Max
+-Practicum_4
+--Task_VI_19
+--Task_VII_4
+-Practicum_5
+--Task_II_17
+--Task_IV_4
+--Task_V_2
+-Practicum_6
+--Task_II_3
+--Task_IV_15
+--Task_V_6
+--Task_VI_2

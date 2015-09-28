@@ -1,0 +1,15 @@
+﻿TASKS_EXPLORER\n    Lecture_Classes
+TASKS_EXPLORER\n	Practice_Classes
+Lecture_Classes		-Third_Max
+Practice_Classes	-Practicum_4
+-Practicum_4		--Task_VI_19
+-Practicum_4		--Task_VII_4
+Practice_Classes	-Practicum_5
+-Practicum_5		--Task_II_17
+-Practicum_5		--Task_IV_4
+-Practicum_5		--Task_V_2
+Practice_Classes	-Practicum_6
+-Practicum_6		--Task_II_3
+-Practicum_6		--Task_IV_15
+-Practicum_6		--Task_V_6
+-Practicum_6		--Task_VI_2

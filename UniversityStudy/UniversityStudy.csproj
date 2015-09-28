@@ -48,8 +48,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleInterface.cs" />
+    <Compile Include="General.cs" />
+    <Compile Include="InputHandler.cs" />
+    <Compile Include="ProgClasses\Lecture.cs" />
+    <Compile Include="ProgClasses\Part2.cs" />
+    <Compile Include="ProgClasses\Part3.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Part1.cs" />
+    <Compile Include="ProgClasses\Part1.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -70,6 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeResources\Dependences.txt" />
+    <Content Include="CodeResources\Files.txt" />
+    <Content Include="CodeResources\input.txt" />
+    <Content Include="CodeResources\output.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

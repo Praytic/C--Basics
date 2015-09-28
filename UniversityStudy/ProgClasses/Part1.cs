@@ -1,41 +1,6 @@
-/* Part1 class contains following tasks:
- * Practice 4 - VI(19), VII(4)
- * Practive 5 - II(17), IV(4), V(2)
- */
-
-/* Part2 class contains following tasks:
- * Practive 6 - II(3), V(6)
- */
-
 using System;
 
-namespace UniversityStudy {
-
-	class General {
-
-		public static T[] ReadArray<T>(int n) {
-
-			string[] scan = Console.ReadLine().Split(' ');
-			T[] a = new T[n * 2];
-			for (int i = 0; i < n; i++) {
-				a[i] = (T)Convert.ChangeType(scan[i], typeof(T));
-			}
-			return a;
-		}
-
-		public static T ReadValue<T>() {
-
-			T a = (T)Convert.ChangeType(Console.ReadLine(), typeof(T));
-			return a;
-		}
-
-		public static void WriteArray<T>(T[] arr, int n) {
-
-			for (int i = 0; i < n; i++) {
-				Console.Write("{0} ", arr[i]);
-			}
-		}
-	}
+namespace UniversityStudy.ProgClasses {
 
 	class Part1 {
 
@@ -141,52 +106,5 @@ namespace UniversityStudy {
 			}
 		}
 
-	}
-
-	class Part2 {
-
-		static void ArrayAddValue(int[] a, ref int n, int newElement, int m) {
-
-					for (int i = n; i >= m; i--) {
-						a[i] = a[i - 1];
-					}
-					n++;
-					a[m] = newElement;
-				}
-
-		static public void Prac6_II_3() {
-
-			int n = General.ReadValue<int>();
-			double[] a = General.ReadArray<double>(n);
-			double maxValue = (n == 0) ? 0 : a[0];
-			for (int i = 0; i < n; i++) {
-				if (a[i] > maxValue) {
-					maxValue = a[i];
-				}
-			}
-			for (int i = 0; i < n; i++) {
-				if (a[i] == maxValue) {
-					a[i] = 0;
-				}
-			}
-			for (int i = 0; i < n; i++) {
-				Console.Write("{0} ", a[i]);
-			}
-		}
-
-		static public void Prac6_V_6() {
-
-			int n = General.ReadValue<int>();
-			int[] a = General.ReadArray<int>(n);
-			int number = 0;
-			for (; number < n; number++) {
-				if (a[number] < 0) {
-					int newElement = General.ReadValue<int>();
-					ArrayAddValue(a, ref n, newElement, number);
-					break;
-				}
-			}
-			General.WriteArray<int>(a, n);
-		}
 	}
 }
