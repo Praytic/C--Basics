@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="UniversityStudy.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeResources/output.txt">
+    <Files>
+      <File FileName="Program.cs" Line="15" Column="23" />
+      <File FileName="ProgClasses/Part1.cs" Line="109" Column="2" />
+      <File FileName="General.cs" Line="68" Column="74" />
+      <File FileName="ConsoleInterface.cs" Line="15" Column="44" />
+      <File FileName="CodeResources/input.txt" Line="1" Column="1" />
+      <File FileName="CodeResources/output.txt" Line="2" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

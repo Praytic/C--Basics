@@ -13,7 +13,6 @@ namespace UniversityStudy {
 
 		public static bool working = true;
 		private static Node folders = new Node();
-		private static bool[] state = new bool[1000];
 
 		public static void MainLoop() {
 
@@ -36,9 +35,9 @@ namespace UniversityStudy {
 		private static void DrawNode(Node current, int level) {
 
 			if (current.isSelected) {
-				Console.BackgroundColor = ConsoleColor.DarkGray;
+				Console.BackgroundColor = ConsoleColor.Magenta;
 			}
-			Console.WriteLine(current.value.PadRight(Console.WindowWidth - 1));
+			Console.WriteLine(current.value.PadRight(Console.WindowWidth));
 			Console.ResetColor();
 			foreach (var child in current.children) {
 				if (child.isVisible)
@@ -48,8 +47,8 @@ namespace UniversityStudy {
 
 		private static void TitleFillUp() {
 
-			System.IO.StreamReader files = new System.IO.StreamReader(@"..\..\CodeResources\Files.txt");
-			System.IO.StreamReader dependences = new System.IO.StreamReader(@"..\..\CodeResources\Dependences.txt");
+			System.IO.StreamReader files = new System.IO.StreamReader(@"../../CodeResources/Files.txt");
+			System.IO.StreamReader dependences = new System.IO.StreamReader(@"../../CodeResources/Dependences.txt");
 
 			SortedDictionary<string, Node> independedFolders = new SortedDictionary<string, Node>();
 			independedFolders.Add("TASKS_EXPLORER\n", new Node("TASKS_EXPLORER\n"));
@@ -65,6 +64,8 @@ namespace UniversityStudy {
 				inp = Regex.Replace(inp, @"\\n+", "\n");
 				string[] edge = inp.Split(' ');
 				independedFolders[edge[0]].children.Add(independedFolders[edge[1]]);
+				independedFolders[edge[0]].children[independedFolders[edge[0]].children.Count - 1].number = independedFolders[edge[0]].children.Count - 1;
+				independedFolders[edge[0]].children[independedFolders[edge[0]].children.Count - 1].parent = independedFolders[edge[0]];
 			}
 
 			folders = independedFolders["TASKS_EXPLORER\n"];
@@ -77,7 +78,9 @@ namespace UniversityStudy {
 	class Node {
 
 		public List<Node> children;
+		public Node parent;
 		public string value;
+		public int number;
 
 		public bool isExpanded;
 		public bool isVisible;
@@ -90,6 +93,7 @@ namespace UniversityStudy {
 		public Node(string v) {
 			this.value = v;
 			children = new List<Node>();
+			parent = new Node ();
 		    isExpanded = false;
 			isVisible = false;
 			dfsState = false;

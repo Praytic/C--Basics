@@ -56,9 +56,9 @@ namespace UniversityStudy {
 		private static void StopProgram() {
 
 			Console.Clear();
-			Console.Write("Do you want to exit the program? (y/n): ");
-			string answer = Console.ReadLine();
-			if (answer == "y") {
+			Console.Write("Do you want to exit the program? (Enter/Esc)");
+			ConsoleKeyInfo key1 = Console.ReadKey ();
+			if (key1.Key == ConsoleKey.Escape) {
 				ConsoleInterface.working = false;
 			}
 		}
@@ -77,9 +77,12 @@ namespace UniversityStudy {
 				string cur = General.infile.ReadLine();
 				Console.WriteLine(cur);
 			}
-			Console.Write("# Is input is fine? (y/n): ");
-			string answer = Console.ReadLine();
-			if (answer == "n") return;
+			Console.Write("# Is input is fine? (Enter/Esc)");
+			ConsoleKeyInfo key1 = Console.ReadKey ();
+			if (key1.Key == ConsoleKey.Escape) {
+				return;
+			}
+
 			Console.BackgroundColor = ConsoleColor.DarkGray;
 			Console.Write("".PadRight(Console.WindowWidth));
 			Console.ResetColor();
@@ -132,16 +135,28 @@ namespace UniversityStudy {
 		private static void ArrowUp(Node current, int selected) {
 
 			if (selected != 0) {
-				current.children[selected - 1].isSelected = true;
-				current.children[selected].isSelected = false;
+				current.children [selected - 1].isSelected = true;
+				current.children [selected].isSelected = false;
+			} else {
+				if (current.value != "TASKS_EXPLORER\n") {
+					current.children [selected].isSelected = false;
+					current.isSelected = true;
+					current.SetExpanded (false);
+				}
 			}
 		}
 
 		private static void ArrowDown(Node current, int selected) {
 
 			if (selected != current.children.Count - 1) {
-				current.children[selected + 1].isSelected = true;
-				current.children[selected].isSelected = false;
+				current.children [selected + 1].isSelected = true;
+				current.children [selected].isSelected = false;
+			} else {
+				if (selected != current.parent.children.Count - 1) {
+
+				} else {
+					ArrowDown (current, current.number); 
+				}
 			}
 		}
 

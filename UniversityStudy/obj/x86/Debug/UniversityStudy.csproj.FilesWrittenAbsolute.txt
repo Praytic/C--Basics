@@ -1,0 +1,5 @@
+/home/praytik/Projects/CSharp-Basics/UniversityStudy/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/praytik/Projects/CSharp-Basics/UniversityStudy/obj/x86/Debug/UniversityStudy.exe
+/home/praytik/Projects/CSharp-Basics/UniversityStudy/bin/Debug/UniversityStudy.exe.mdb
+/home/praytik/Projects/CSharp-Basics/UniversityStudy/bin/Debug/UniversityStudy.exe
+/home/praytik/Projects/CSharp-Basics/UniversityStudy/obj/x86/Debug/UniversityStudy.exe.mdb

@@ -13,3 +13,14 @@ Practice_Classes	-Practicum_6
 -Practicum_6		--Task_IV_15
 -Practicum_6		--Task_V_6
 -Practicum_6		--Task_VI_2
+--Task_VI_2			---DDSGDS
+---DDSGDS			----DGSDGSDVD
+----DGSDGSDVD		-----SDGSDVEWVWE1
+----DGSDGSDVD		-----SDGSDVEWVWE2
+----DGSDGSDVD		-----SDGSDVEWVWE3
+----DGSDGSDVD		-----SDGSDVEWVWE4
+----DGSDGSDVD		-----SDGSDVEWVWE5
+----DGSDGSDVD		-----SDGSDVEWVWE6
+----DGSDGSDVD		-----SDGSDVEWVWE7
+----DGSDGSDVD		-----SDGSDVEWVWE8
+----DGSDGSDVD		-----

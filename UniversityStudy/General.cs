@@ -65,8 +65,8 @@ namespace UniversityStudy {
 
 		public static void Initiate() {
 
-			infile = new System.IO.StreamReader(@"..\..\CodeResources\input.txt");
-			outfile = new System.IO.StreamWriter(@"..\..\CodeResources\output.txt");
+			infile = new System.IO.StreamReader(@"../../CodeResources/input.txt");
+			outfile = new System.IO.StreamWriter(@"../../CodeResources/output.txt");
 		}
 	}
 }
