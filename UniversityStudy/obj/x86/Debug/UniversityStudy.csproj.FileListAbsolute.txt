@@ -8,3 +8,8 @@ D:\Mod\Projects\CSharp-Basics-master\UniversityStudy\obj\x86\Debug\UniversityStu
 D:\Mod\Projects\CSharp-Basics-master\UniversityStudy\bin\Debug\UniversityStudy.exe
 D:\Mod\Projects\CSharp-Basics-master\UniversityStudy\bin\Debug\UniversityStudy.pdb
 D:\Mod\Projects\CSharp-Basics-master\UniversityStudy\obj\x86\Debug\UniversityStudy.csprojResolveAssemblyReference.cache
+D:\SharpDev\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.exe
+D:\SharpDev\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.pdb
+D:\SharpDev\CSharp-Basics\UniversityStudy\bin\Debug\UniversityStudy.exe
+D:\SharpDev\CSharp-Basics\UniversityStudy\bin\Debug\UniversityStudy.pdb
+D:\SharpDev\CSharp-Basics\UniversityStudy\obj\x86\Debug\UniversityStudy.csprojResolveAssemblyReference.cache

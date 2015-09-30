@@ -12,12 +12,14 @@ namespace UniversityStudy {
 	class InputHandler {
 
 		private enum ArrowMoves { LEFT, UP, DOWN, RIGHT, ENTER, BACKSPACE, ESCAPE, NULL };
+		private static bool stopDFS = false;
 
 		public static void HandleInput(ref Node folders) {
 
 			if (Console.KeyAvailable) {
 				ConsoleKeyInfo keyInfo = Console.ReadKey(true);
 				DFSClearFlags(folders);
+				stopDFS = false;
 
 				if (keyInfo.Key == ConsoleKey.UpArrow) {
 					DFSSelectedChange(folders, ArrowMoves.UP);
@@ -109,10 +111,8 @@ namespace UniversityStudy {
 
 		private static void DFSSelectedChange(Node current, ArrowMoves moved) {
 
-			if (moved == ArrowMoves.NULL) return;
-
 			current.dfsState = true;
-			for (int i = 0; i < current.children.Count; i++) {
+			for (int i = 0; i < current.children.Count && !stopDFS; i++) {
 				if (!current.children[i].dfsState) {
 					if (current.children[i].isSelected) {
 						switch (moved) {
@@ -124,7 +124,7 @@ namespace UniversityStudy {
 							case ArrowMoves.BACKSPACE:	ArrowLeft(current, i);		break;
 							default: break;
 						}
-						moved = ArrowMoves.NULL;
+						stopDFS = true;
 						return;
 					}
 					DFSSelectedChange(current.children[i], moved);
@@ -151,11 +151,12 @@ namespace UniversityStudy {
 			if (selected != current.children.Count - 1) {
 				current.children [selected + 1].isSelected = true;
 				current.children [selected].isSelected = false;
-			} else {
-				if (selected != current.parent.children.Count - 1) {
-
-				} else {
-					ArrowDown (current, current.number); 
+			} else 
+			if (current.parent.value != null) {
+				if (current.number != current.parent.children.Count - 1) {
+					current.children[selected].isSelected = false;
+					current.SetExpanded(false);
+					ArrowDown(current.parent, current.number); 
 				}
 			}
 		}

@@ -12,6 +12,7 @@ namespace UniversityStudy {
 		private const int RENDER_DELAY = 100;
 
 		public static bool working = true;
+
 		private static Node folders = new Node();
 
 		public static void MainLoop() {
@@ -20,24 +21,24 @@ namespace UniversityStudy {
 			folders.SetExpanded(true);
 			folders.children[0].isSelected = true;
 			while (working) {
-				DrawSubtree(folders, 0);
+				DrawSubtree(folders);
 				InputHandler.HandleInput(ref folders);
 			}
 		}
 
-		private static void DrawSubtree(Node current, int level) {
+		private static void DrawSubtree(Node current) {
 			
 			Console.Clear();
-			DrawNode(current, level);
+			DrawNode(current, 0);
 			Thread.Sleep(RENDER_DELAY);
 		}
 
 		private static void DrawNode(Node current, int level) {
 
 			if (current.isSelected) {
-				Console.BackgroundColor = ConsoleColor.Magenta;
+				Console.BackgroundColor = ConsoleColor.DarkGray;
 			}
-			Console.WriteLine(current.value.PadRight(Console.WindowWidth));
+			Console.WriteLine(current.value.PadRight(Console.WindowWidth - 1));
 			Console.ResetColor();
 			foreach (var child in current.children) {
 				if (child.isVisible)
