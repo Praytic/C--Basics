@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Text;
 
 namespace UniversityStudy.ProgClasses {
 
@@ -58,6 +59,8 @@ namespace UniversityStudy.ProgClasses {
 					if (arr2d[j][i] < 0) flag = false;
 				}
 				if (!flag) {
+                    break;
+                } else {
 					ArrayAddArray(arr2d, ref n, m, pasteArray, i);
 					i++;
 				}
