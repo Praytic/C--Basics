@@ -1,0 +1,5 @@
+D:\Docs\SSU\Base_Sources\CSharp\REG\TextCorrectionChecker\TextCorrectionChecker\bin\Debug\TextCorrectionChecker.exe.config
+D:\Docs\SSU\Base_Sources\CSharp\REG\TextCorrectionChecker\TextCorrectionChecker\bin\Debug\TextCorrectionChecker.exe
+D:\Docs\SSU\Base_Sources\CSharp\REG\TextCorrectionChecker\TextCorrectionChecker\bin\Debug\TextCorrectionChecker.pdb
+D:\Docs\SSU\Base_Sources\CSharp\REG\TextCorrectionChecker\TextCorrectionChecker\obj\Debug\TextCorrectionChecker.exe
+D:\Docs\SSU\Base_Sources\CSharp\REG\TextCorrectionChecker\TextCorrectionChecker\obj\Debug\TextCorrectionChecker.pdb
